@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بطاقة تهنئة</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+            padding: 20px;
+        }
+        .card h1 {
+            color: #4caf50;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .card button {
+            background: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .card button:hover {
+            background: #388e3c;
+        }
+        .message {
+            display: none;
+            margin-top: 20px;
+            color: #ff5722;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>حمد لله على السلامة!</h1>
+        <p>الحمد لله علي سلامتك يسطا وعايزينك دايما بصحه وخير وربنا </p>
+        <button onclick="openLinkWithDelay()">اضغط هنا</button>
+        <div class="message" id="message">🎉 هديه من صحابك اللي بيحبوك الف سلامه يا راجل يا جدع 🎉</div>
+    </div>
+
+    <script>
+        function openLinkWithDelay() {
+            const message = document.getElementById('message');
+            message.style.display = 'block';
+            setTimeout(() => {
+                window.open('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fmounir199700%2F%25D8%25B5%25D9%2588%25D8%25B1-%25D9%2583%25D9%2585%25D8%25A7%25D9%2584-%25D8%25A7%25D8%25AC%25D8%25B3%25D8%25A7%25D9%2585%2F&psig=AOvVaw3FvlZGd4Pxa11-oOgR1kDC&ust=1734385655886000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJD51ZjgqooDFQAAAAAdAAAAABAE', '_blank');
+            }, 2000); // Wait for 2 seconds before redirecting
+        }
+    </script>
+</body>
+</html>
